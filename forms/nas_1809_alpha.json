@@ -1,0 +1,231 @@
+{
+  "form_code": "NAS-COR-1809-alpha",
+  "source_family": "NAS",
+  "label": "Cortale birth record 1809 – alpha",
+  "valid_from_year": 1809,
+  "valid_to_year": 1809,
+  "default_context_code": "COR-NAS-1809",
+  "components": [
+    {
+      "id": "context",
+      "type": "SOURCE_CONTEXT",
+      "title": "Register context",
+      "fields": [
+        {
+          "field_code": "source_reference"
+        },
+        {
+          "field_code": "source_url"
+        },
+        {
+          "field_code": "provincia_raw"
+        },
+        {
+          "field_code": "distretto_raw"
+        },
+        {
+          "field_code": "comune_universita_raw",
+          "default": "Cortale"
+        },
+        {
+          "field_code": "quartiere_raw"
+        },
+        {
+          "field_code": "register_year_raw",
+          "default": "1809"
+        },
+        {
+          "field_code": "register_type_raw",
+          "default": "NAS"
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "type": "RECORD",
+      "title": "Act / administrative record",
+      "fields": [
+        {
+          "field_code": "record_number_raw"
+        },
+        {
+          "field_code": "record_day_raw"
+        },
+        {
+          "field_code": "record_month_raw"
+        },
+        {
+          "field_code": "record_year_raw",
+          "default": "1809"
+        },
+        {
+          "field_code": "record_time_raw"
+        },
+        {
+          "field_code": "record_place_raw"
+        },
+        {
+          "field_code": "legibility_score",
+          "widget": "Combobox",
+          "choices": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "default": "4"
+        }
+      ]
+    },
+    {
+      "id": "officer",
+      "type": "PRI",
+      "title": "Officer / Sindaco",
+      "position_type": "officer",
+      "fields": [
+        {
+          "field_code": "honorific_raw"
+        },
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        }
+      ]
+    },
+    {
+      "id": "declarant",
+      "type": "PRI",
+      "title": "Declarant / Comparso",
+      "position_type": "declarant",
+      "fields": [
+        {
+          "field_code": "honorific_raw"
+        },
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        },
+        {
+          "field_code": "occupation_raw"
+        },
+        {
+          "field_code": "age_text_raw"
+        },
+        {
+          "field_code": "age_unit_raw",
+          "widget": "Combobox",
+          "choices": [
+            "anni",
+            "mesi",
+            "giorni"
+          ],
+          "default": "anni"
+        },
+        {
+          "field_code": "domicile_raw"
+        },
+        {
+          "field_code": "street_raw"
+        },
+        {
+          "field_code": "house_number_raw"
+        },
+        {
+          "field_code": "signature_present",
+          "widget": "Checkbox"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "type": "PRI",
+      "title": "Child",
+      "position_type": "child",
+      "fields": [
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        },
+        {
+          "field_code": "sex_raw",
+          "widget": "Combobox",
+          "choices": [
+            "maschio",
+            "femmina",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "birth",
+      "type": "EVENT",
+      "title": "Birth event",
+      "event_type": "birth",
+      "fields": [
+        {
+          "field_code": "event_day_raw"
+        },
+        {
+          "field_code": "event_month_raw"
+        },
+        {
+          "field_code": "event_year_raw",
+          "default": "1809"
+        },
+        {
+          "field_code": "event_time_raw"
+        },
+        {
+          "field_code": "event_place_raw"
+        }
+      ]
+    },
+    {
+      "id": "witness",
+      "type": "PRI",
+      "title": "Witness",
+      "position_type": "witness",
+      "repeatable": true,
+      "default_instances": 2,
+      "fields": [
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        },
+        {
+          "field_code": "age_text_raw"
+        },
+        {
+          "field_code": "age_unit_raw",
+          "widget": "Combobox",
+          "choices": [
+            "anni",
+            "mesi",
+            "giorni"
+          ],
+          "default": "anni"
+        },
+        {
+          "field_code": "occupation_raw"
+        },
+        {
+          "field_code": "domicile_raw"
+        },
+        {
+          "field_code": "signature_present",
+          "widget": "Checkbox"
+        }
+      ]
+    }
+  ]
+}

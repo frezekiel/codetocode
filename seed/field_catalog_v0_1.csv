@@ -1,0 +1,109 @@
+﻿field_code,label,entity,layer,semantic_type,default_widget,source_families,repeatable,place_linkable,form_selectable,notes
+source_reference,Source reference,SOURCE_CONTEXT,RAW,reference,Entry,ALL,No,No,No,Archive/platform reference or citation string.
+source_url,Source URL,SOURCE_CONTEXT,RAW,url,Entry,ALL,No,No,No,Link to the digitized source where available.
+image_no_raw,Image number raw,PAGE/SHEET,RAW,identifier,Entry,ALL,No,No,No,
+page_no_raw,Page number raw,PAGE/SHEET,RAW,identifier,Entry,ALL,No,No,No,
+sheet_no_raw,Sheet/list number raw,PAGE/SHEET,RAW,identifier,Entry,MIG,No,No,No,
+legibility_score,Legibility,RECORD,SOURCE_DERIVED,ordinal,Combobox,ALL,No,No,No,1=not readable; 2=very difficult; 3=readable with effort; 4=good; 5=easy.
+meta_description,Source/context note,SOURCE_CONTEXT,RAW,text,Text,ALL,No,No,No,
+transcriber,Transcriber,SYSTEM,SYSTEM,text,Default,ALL,No,No,No,Default once per session.
+transcription_date,Transcription date,SYSTEM,SYSTEM,date,Automatic,ALL,No,No,No,
+created_at,Created at,SYSTEM,SYSTEM,datetime,Automatic,ALL,No,No,No,
+updated_at,Updated at,SYSTEM,SYSTEM,datetime,Automatic,ALL,No,No,No,
+provincia_raw,Provincia raw,SOURCE_CONTEXT,RAW,place_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+distretto_raw,Distretto raw,SOURCE_CONTEXT,RAW,place_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+comune_universita_raw,Comune / Università raw,SOURCE_CONTEXT,RAW,place_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+quartiere_raw,Quartiere raw,SOURCE_CONTEXT,RAW,place_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+register_year_raw,Register year raw,SOURCE_CONTEXT,RAW,year_text,Entry,NAS/MAT/MOR,No,No,Yes,
+register_type_raw,Register type raw,SOURCE_CONTEXT,RAW,text,Entry,NAS/MAT/MOR,No,No,Yes,
+register_title_raw,Register title raw,SOURCE_CONTEXT,RAW,text,Text,NAS/MAT/MOR,No,No,Yes,
+ship_name_raw,Ship name raw,SOURCE_CONTEXT,RAW,text,Entry,MIG,No,No,Yes,
+shipping_line_raw,Shipping line raw,SOURCE_CONTEXT,RAW,text,Entry,MIG,No,No,Yes,
+manifest_list_no_raw,Manifest / list number raw,SOURCE_CONTEXT,RAW,identifier,Entry,MIG,No,No,Yes,
+record_number_raw,Record / act / row number raw,RECORD,RAW,identifier,Entry,ALL,No,No,Yes,
+record_folio_raw,Folio raw,RECORD,RAW,identifier,Entry,NAS/MAT/MOR,No,No,Yes,
+record_day_raw,Record day raw,RECORD,RAW,date_part_text,Entry,NAS/MAT/MOR,No,No,Yes,
+record_month_raw,Record month raw,RECORD,RAW,date_part_text,Entry,NAS/MAT/MOR,No,No,Yes,
+record_year_raw,Record year raw,RECORD,RAW,date_part_text,Entry,NAS/MAT/MOR,No,No,Yes,
+record_time_raw,Record time raw,RECORD,RAW,time_text,Entry,NAS/MAT/MOR,No,No,Yes,
+record_place_raw,Record place raw,RECORD,RAW,place_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+record_note_raw,Record note raw,RECORD,RAW,text,Text,ALL,No,No,Yes,
+verification_note_raw,Verification / authorization raw,RECORD,RAW,text,Text,MOR,No,No,Yes,For source wording around verification/authorization of death; may be refined after more source testing.
+passenger_class_raw,Passenger class raw,RECORD,RAW,text,Entry,MIG,No,No,Yes,Manifest-specific; availability to be verified per form version.
+record_date_norm,Record date normalized,RECORD,NORM,date,Hidden,NAS/MAT/MOR,No,No,No,
+record_time_norm,Record time normalized,RECORD,NORM,time,Hidden,NAS/MAT/MOR,No,No,No,
+honorific_raw,Honorific raw,PRI,RAW,text,Entry,ALL,No,No,Yes,
+given_name_raw,Given name raw,PRI,RAW,name,Entry,ALL,No,No,Yes,
+surname_raw,Surname raw,PRI,RAW,name,Entry,ALL,No,No,Yes,
+sex_raw,Sex raw,PRI,RAW,text,Combobox,ALL,No,No,Yes,
+age_text_raw,Age raw,PRI,RAW,age_text,Entry,ALL,No,No,Yes,
+age_unit_raw,Age unit raw,PRI,RAW,choice,Combobox,ALL,No,No,Yes,Typical civil default: anni; also mesi/giorni where source requires.
+occupation_raw,Occupation raw,PRI,RAW,text,Entry,ALL,No,No,Yes,
+domicile_raw,Domicile raw,PRI,RAW,place_text,Entry,ALL,No,Yes,Yes,
+street_raw,Street raw,PRI,RAW,address_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+house_number_raw,House number raw,PRI,RAW,identifier,Entry,NAS/MAT/MOR,No,No,Yes,
+address_raw,Address raw,PRI,RAW,address_text,Text,ALL,No,Yes,Yes,"Use for unstructured addresses, especially contacts in MIG."
+nativo_raw,Native/origin raw,PRI,RAW,place_text,Entry,NAS/MAT/MOR,No,Yes,Yes,
+nationality_raw,Nationality raw,PRI,RAW,text,Entry,MIG,No,No,Yes,
+marital_status_raw,Marital status raw,PRI,RAW,text,Combobox,MAT/MOR/MIG,No,No,Yes,
+social_marker_raw,Social marker raw,PRI,RAW,text,Entry,NAS/MAT/MOR,No,No,Yes,
+genealogical_marker_raw,Genealogical marker raw,PRI,RAW,text,Entry,NAS/MAT/MOR,No,No,Yes,Preserve markers such as fu/quondam when source wording requires; relation wording belongs in REL.
+signature_present,Signature present,PRI,SOURCE_DERIVED,boolean,Checkbox,NAS/MAT/MOR,No,No,Yes,
+person_note_raw,Person note,PRI,RAW,text,Text,ALL,No,No,Yes,
+source_fragment_raw,Exceptional source fragment,PRI,RAW,long_text,Text,ALL,No,No,Yes,"Optional; only for complex/unatomizable wording, not part of normal tab workflow."
+given_name_norm,Given name normalized,PRI,NORM,name,Hidden,ALL,No,No,No,Minimal confirmed normalization only; raw is never overwritten.
+surname_norm,Surname normalized,PRI,NORM,name,Hidden,ALL,No,No,No,
+age_value_norm,Age value normalized,PRI,NORM,number,Hidden,ALL,No,No,No,
+age_unit_norm,Age unit normalized,PRI,NORM,choice,Hidden,ALL,No,No,No,
+able_read_raw,Able to read raw,PRI,RAW,boolean_or_text,Combobox,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+able_write_raw,Able to write raw,PRI,RAW,boolean_or_text,Combobox,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+race_people_raw,Race / people raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+last_residence_country_raw,Last residence country raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+last_residence_place_raw,Last residence place raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+destination_state_raw,Destination state raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+destination_place_raw,Destination place raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+ticket_destination_raw,Ticket to destination raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+passage_paid_by_raw,Passage paid by raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+money_raw,Money in possession raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+previous_us_raw,Previously in US raw,PRI,RAW,boolean_or_text,Combobox,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+previous_us_period_raw,Previous US period raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+previous_us_place_raw,Previous US place raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+institutionalized_raw,Prison / almshouse / institution raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+polygamist_raw,Polygamist raw,PRI,RAW,boolean_or_text,Combobox,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+anarchist_raw,Anarchist raw,PRI,RAW,boolean_or_text,Combobox,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+contract_labor_raw,Contract labour raw,PRI,RAW,boolean_or_text,Combobox,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+health_raw,Health raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+deformed_crippled_raw,Physical condition raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+height_feet_raw,Height feet raw,PRI,RAW,number_text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+height_inches_raw,Height inches raw,PRI,RAW,number_text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+complexion_raw,Complexion raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+hair_raw,Hair raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+eyes_raw,Eyes raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+marks_raw,Marks of identification raw,PRI,RAW,text,Entry,MIG,No,No,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+birth_country_raw,Birth country raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+birth_place_raw,Birth place raw,PRI,RAW,place_text,Entry,MIG,No,Yes,Yes,Exact availability must be verified against the specific 1892–1914 manifest form version.
+event_type,Event type,EVENT,NORM,controlled_vocabulary,Combobox,ALL,No,No,No,"Defined by form/event configuration, not transcribed as source wording."
+event_sequence_no,Event sequence number,EVENT,SYSTEM,integer,Automatic,ALL,No,No,No,"Used for repeatable events, e.g. marriage publications."
+event_day_raw,Event day raw,EVENT,RAW,date_part_text,Entry,ALL,No,No,Yes,
+event_month_raw,Event month raw,EVENT,RAW,date_part_text,Entry,ALL,No,No,Yes,
+event_year_raw,Event year raw,EVENT,RAW,date_part_text,Entry,ALL,No,No,Yes,
+event_time_raw,Event time raw,EVENT,RAW,time_text,Entry,ALL,No,No,Yes,
+event_place_raw,Event place raw,EVENT,RAW,place_text,Entry,ALL,No,Yes,Yes,
+event_note_raw,Event note raw,EVENT,RAW,text,Text,ALL,No,No,Yes,
+event_date_norm,Event date normalized,EVENT,NORM,date,Hidden,ALL,No,No,No,
+event_time_norm,Event time normalized,EVENT,NORM,time,Hidden,ALL,No,No,No,
+relation_raw,Relation raw,REL,RAW,text,Entry,ALL,Yes,No,Yes,"Preserve source wording, e.g. fratello germano / figlio del fu ..."
+relation_type_norm,Relation type normalized,REL,NORM,controlled_vocabulary,Combobox,ALL,Yes,No,No,
+relation_subtype_norm,Relation subtype normalized,REL,NORM,text,Combobox,ALL,Yes,No,No,"Optional refinement, e.g. paternal/maternal/full sibling."
+explicit_in_source,Explicit in source,REL,SOURCE_DERIVED,boolean,Checkbox,ALL,Yes,No,No,
+inferred,Inferred relation,REL,SYSTEM,boolean,Checkbox,ALL,Yes,No,No,
+relation_note,Relation note,REL,RAW,text,Text,ALL,Yes,No,No,
+document_type_raw,Document type raw,SUPPORTING_DOCUMENT,RAW,text,Entry,MAT,Yes,No,Yes,
+document_date_raw,Document date raw,SUPPORTING_DOCUMENT,RAW,date_text,Entry,MAT,Yes,No,Yes,
+document_place_raw,Document place raw,SUPPORTING_DOCUMENT,RAW,place_text,Entry,MAT,Yes,Yes,Yes,
+document_reference_raw,Document reference raw,SUPPORTING_DOCUMENT,RAW,text,Entry,MAT,Yes,No,Yes,
+document_note_raw,Document note raw,SUPPORTING_DOCUMENT,RAW,text,Text,MAT,Yes,No,Yes,
+place_name_norm,Place name normalized,PLACE,NORM,place,Hidden,ALL,No,No,No,
+place_type,Place type,PLACE,NORM,controlled_vocabulary,Hidden,ALL,No,No,No,
+parent_place_id,Parent place ID,PLACE,SYSTEM,foreign_key,Hidden,ALL,No,No,No,
+place_note,Place note,PLACE,RAW,text,Hidden,ALL,No,No,No,

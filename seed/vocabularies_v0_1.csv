@@ -1,0 +1,57 @@
+﻿vocabulary,value,applies_to,notes
+source_family,NAS,FORM_VERSION / RECORD,Birth records
+source_family,MAT,FORM_VERSION / RECORD,Marriage records
+source_family,MOR,FORM_VERSION / RECORD,Death records
+source_family,MIG,FORM_VERSION / RECORD,Passenger manifests / migration records
+position_type,officer,POSITION,Civil-status official / Sindaco or equivalent
+position_type,declarant,POSITION,Person making the declaration; repeatable where form requires
+position_type,child,POSITION,Child in a birth record
+position_type,mother,POSITION,Mother
+position_type,father,POSITION,Father
+position_type,spouse_1,POSITION,Neutral spouse position 1
+position_type,spouse_2,POSITION,Neutral spouse position 2
+position_type,deceased,POSITION,Deceased person
+position_type,witness,POSITION,Witness; repeatable
+position_type,midwife,POSITION,Midwife
+position_type,verifier,POSITION,Person verifying/authorizing a fact where source supports it
+position_type,migrant,POSITION,Passenger / migrant
+position_type,home_contact,POSITION,Contact person in country of origin
+position_type,us_contact,POSITION,Contact person in destination country / US
+position_type,other_person,POSITION,Fallback structural position; relation must remain explicit
+event_type,birth,EVENT,
+event_type,baptism,EVENT,Used only where the form/source explicitly records it
+event_type,marriage_publication,EVENT,Repeatable; use sequence_no
+event_type,marriage,EVENT,
+event_type,death,EVENT,
+event_type,departure,EVENT,Primarily MIG
+event_type,arrival,EVENT,Primarily MIG
+relation_type,father_of,REL,
+relation_type,mother_of,REL,
+relation_type,parent_of,REL,
+relation_type,child_of,REL,
+relation_type,son_of,REL,
+relation_type,daughter_of,REL,
+relation_type,sibling_of,REL,Normalized relation; source-specific brother/sister wording remains in relation_raw.
+relation_type,uncle_of,REL,
+relation_type,aunt_of,REL,
+relation_type,cousin_of,REL,
+relation_type,spouse_of,REL,
+relation_type,widow_of,REL,
+relation_type,widower_of,REL,
+relation_type,friend_of,REL,
+relation_type,midwife_of,REL,
+relation_type,declarant_of,REL,
+relation_type,witness_of,REL,
+relation_type,officiates,REL,
+relation_type,verifies,REL,
+missing_value_status,blank_not_stated,CAPTURE,"Field exists in this FORM_VERSION, but source gives no value."
+missing_value_status,illegible,CAPTURE,"Field exists, but the value cannot be read reliably."
+form_structure_status,structurally_absent,FORM_VERSION,Not a record-level missing value. The field does not exist in this form version.
+legibility_score,1,RECORD,not readable
+legibility_score,2,RECORD,very difficult to read
+legibility_score,3,RECORD,readable with effort
+legibility_score,4,RECORD,good
+legibility_score,5,RECORD,easy / unproblematic
+linkage_decision,LINK,Stage 2 linkage review,Confirmed same-person linkage / grouping decision
+linkage_decision,UNCERTAIN,Stage 2 linkage review,Candidate remains unresolved
+linkage_decision,REJECT,Stage 2 linkage review,Candidate pair judged not to be the same historical person
