@@ -1,4 +1,4 @@
-﻿vocabulary,value,applies_to,notes
+vocabulary,value,applies_to,notes
 source_family,NAS,FORM_VERSION / RECORD,Birth records
 source_family,MAT,FORM_VERSION / RECORD,Marriage records
 source_family,MOR,FORM_VERSION / RECORD,Death records
@@ -55,3 +55,5 @@ legibility_score,5,RECORD,easy / unproblematic
 linkage_decision,LINK,Stage 2 linkage review,Confirmed same-person linkage / grouping decision
 linkage_decision,UNCERTAIN,Stage 2 linkage review,Candidate remains unresolved
 linkage_decision,REJECT,Stage 2 linkage review,Candidate pair judged not to be the same historical person
+
+relation_type,same_person_in_record,REL,Explicitly confirmed identity between documentary positions in the same record

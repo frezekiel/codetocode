@@ -1,0 +1,6 @@
+CtC v0.9 defaults — 2026-10-06
+Aktort aus Registerkontext vorgefüllt; Sindaco-Angaben auf Wunsch für weitere Akte beibehalten.
+Quellenbezogene Erfassungsentwürfe innerhalb der laufenden Anwendung.
+Enthält auch Padre = Dichiarante, Elternbeziehungen und explizite Feldbezüge aus v0.8.
+Start: run_ctc.bat oder python src\app.py.
+Eigene Datenbankkopie aus v0.8; keine neue Schemaänderung.

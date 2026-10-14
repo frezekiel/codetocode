@@ -63,18 +63,6 @@
         },
         {
           "field_code": "record_place_raw"
-        },
-        {
-          "field_code": "legibility_score",
-          "widget": "Combobox",
-          "choices": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ],
-          "default": "4"
         }
       ]
     },
@@ -157,9 +145,9 @@
           "field_code": "sex_raw",
           "widget": "Combobox",
           "choices": [
+            "",
             "maschio",
-            "femmina",
-            ""
+            "femmina"
           ]
         }
       ]

@@ -1,0 +1,153 @@
+{
+  "form_code": "MIG-MANIFEST-alpha-v1",
+  "source_family": "MIG",
+  "label": "Migration manifest – starter",
+  "valid_from_year": null,
+  "valid_to_year": null,
+  "default_context_code": "",
+  "components": [
+    {
+      "id": "context",
+      "type": "SOURCE_CONTEXT",
+      "title": "Manifest / voyage context",
+      "fields": [
+        {
+          "field_code": "source_reference"
+        },
+        {
+          "field_code": "source_url"
+        },
+        {
+          "field_code": "manifest_list_no_raw"
+        },
+        {
+          "field_code": "ship_name_raw"
+        },
+        {
+          "field_code": "shipping_line_raw"
+        },
+        {
+          "field_code": "departure_date_raw"
+        },
+        {
+          "field_code": "departure_port_raw"
+        },
+        {
+          "field_code": "arrival_date_raw"
+        },
+        {
+          "field_code": "arrival_port_raw"
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "type": "RECORD",
+      "title": "Passenger row",
+      "fields": [
+        {
+          "field_code": "record_number_raw"
+        },
+        {
+          "field_code": "passenger_class_raw"
+        },
+        {
+          "field_code": "record_note_raw"
+        }
+      ]
+    },
+    {
+      "id": "migrant",
+      "type": "PRI",
+      "title": "Migrant / passenger",
+      "position_type": "migrant",
+      "fields": [
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        },
+        {
+          "field_code": "sex_raw",
+          "widget": "Combobox",
+          "choices": [
+            "",
+            "male",
+            "female"
+          ]
+        },
+        {
+          "field_code": "age_text_raw"
+        },
+        {
+          "field_code": "occupation_raw"
+        },
+        {
+          "field_code": "marital_status_raw"
+        },
+        {
+          "field_code": "nationality_raw"
+        },
+        {
+          "field_code": "last_residence_country_raw"
+        },
+        {
+          "field_code": "last_residence_place_raw"
+        },
+        {
+          "field_code": "destination_state_raw"
+        },
+        {
+          "field_code": "destination_place_raw"
+        },
+        {
+          "field_code": "passage_paid_by_raw"
+        },
+        {
+          "field_code": "money_raw"
+        }
+      ]
+    },
+    {
+      "id": "home_contact",
+      "type": "PRI",
+      "title": "Home contact",
+      "position_type": "home_contact",
+      "fields": [
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        },
+        {
+          "field_code": "address_raw"
+        },
+        {
+          "field_code": "person_note_raw"
+        }
+      ]
+    },
+    {
+      "id": "us_contact",
+      "type": "PRI",
+      "title": "US contact",
+      "position_type": "us_contact",
+      "fields": [
+        {
+          "field_code": "given_name_raw"
+        },
+        {
+          "field_code": "surname_raw"
+        },
+        {
+          "field_code": "address_raw"
+        },
+        {
+          "field_code": "person_note_raw"
+        }
+      ]
+    }
+  ]
+}
